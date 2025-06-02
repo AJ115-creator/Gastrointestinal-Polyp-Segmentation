@@ -53,7 +53,7 @@ The model is evaluated using multiple metrics:
 1. **Clone the repository**:
    ```bash
    git clone <repository-url>
-   cd polyp-segmentation
+   cd Gastrointestinal-Polyp-Segmentation
    ```
 
 2. **Install dependencies**:
@@ -136,9 +136,6 @@ The model achieves:
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 🙏 Acknowledgments
 
