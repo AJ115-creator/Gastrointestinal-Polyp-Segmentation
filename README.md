@@ -143,24 +143,11 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 - Medical professionals for domain expertise
 - Open-source community for tools and frameworks
 
-# Polyp Detection System
-
-A deep learning system for gastrointestinal polyp segmentation using the Kvasir-SEG dataset. This implementation uses an Attention U-Net architecture with memory-efficient design choices for CPU/GPU training.
-
-## Features
-
-- Memory-efficient Attention U-Net architecture
-- Multi-loss function combining Dice and other metrics
-- Comprehensive data augmentation pipeline
-- TensorBoard integration for monitoring
-- Automatic model checkpointing
-- Training curve visualization
-- Prediction visualization with masks
 
 ## Project Structure
 
 ```
-Polyps detection system/
+Gastrointestinal Polyp Segmentation/
 ├── models/
 │   └── attention_unet.py     # Model architecture implementation
 ├── utils/
@@ -235,50 +222,7 @@ Training augmentations include:
 - Color augmentations
 - Gaussian noise
 
-## Training
 
-To start training:
-```bash
-python train.py
-```
-
-The training script includes:
-- Automatic checkpointing of best models
-- Training curve visualization (every 5 epochs)
-- Prediction visualization (every 10 epochs)
-- TensorBoard logging
-- Memory management with garbage collection
-
-## Monitoring Training
-
-1. View training curves:
-   - Check `training_curves.png` for loss and metric plots
-   - Updated every 5 epochs
-
-2. TensorBoard visualization:
-```bash
-tensorboard --logdir runs/
-```
-
-3. Sample predictions:
-   - Check `saved_predictions/` directory
-   - Updated every 10 epochs
-
-## Inference
-
-To run inference on new images:
-```bash
-python inference.py --input_path path/to/image --model_path checkpoints/best_model.pth
-```
-
-## Performance Metrics
-
-The model tracks:
-- Dice coefficient
-- IoU (Intersection over Union)
-- Loss values
-- Pixel accuracy
-- Precision/Recall
 
 ## Error Handling
 
@@ -298,12 +242,3 @@ Main dependencies:
 - NumPy
 - Matplotlib
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- Kvasir-SEG dataset providers
-- Attention U-Net paper authors
-- PyTorch community 
